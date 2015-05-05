@@ -1,0 +1,69 @@
+// This file hosts typography-related styles.
+
+// Generic
+
+body {
+  font-weight: $light-font-weight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: currentcolor;
+  line-height: $text-line-height;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+// Special styles for h1
+
+h1 {
+  line-height: 1.8;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+// Heading font sizes
+
+@for $i from 1 to 6 {
+  h#{$i} {
+    $size:  map-get($heading-font-sizes, $i);
+    font-size: $size;
+
+    $weight: map-get($heading-font-weights, $i);
+    font-weight: $weight;
+  }
+}
+
+// Links
+
+a {
+  font-weight: normal;
+
+  &.ancillary {
+    color: $secondary-text-color;
+  }
+}
+
+// Paragraphs
+
+p {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.copy {
+    color: $secondary-text-color;
+    text-align: center;
+  }
+}
+
+strong {
+  font-weight: normal;
+
+  &.important {
+    color: $primary-color;
+  }
+}
