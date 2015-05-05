@@ -1,1 +1,28 @@
 // Generic styles that apply to the whole app
+
+html.loading {
+  &, body {
+    height: 100%;
+  }
+
+  body {
+    background: $scum-green;
+    color: white;
+    text-align: center;
+
+    &:before {
+      content: "";
+      width: 0;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:after {
+      @extend h1;
+      content: "Loading...";
+      vertical-align: middle;
+    }
+  }
+
+}

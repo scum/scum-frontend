@@ -1,5 +1,4 @@
-// Support for generators
-require("babel/polyfill");
-
+// Application entry point
 document.addEventListener("DOMContentLoaded", function () {
+  document.documentElement.classList.remove("loading");
 });

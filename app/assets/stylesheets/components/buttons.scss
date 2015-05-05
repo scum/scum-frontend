@@ -44,7 +44,7 @@ button, .button {
   text-overflow: ellipsis;
 
   text-align: center;
-  font-weight: $light-font-weight;
+  font-weight: normal;
   border-radius: $base-border-radius;
 
   @include button-states;

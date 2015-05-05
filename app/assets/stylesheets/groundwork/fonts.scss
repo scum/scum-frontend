@@ -26,18 +26,9 @@
   }
 }
 
-////////////
-// Roboto //
-////////////
+/////////////////////
+// Source Sans Pro //
+/////////////////////
 
-@include font("Roboto", "roboto/roboto-thin", 200, normal, "robotothin");
-@include font("Roboto", "roboto/roboto-light", 300, normal, "robotolight");
-@include font("Roboto", "roboto/roboto-regular", normal, normal, "robotoregular");
-@include font("Roboto", "roboto/roboto-medium", 500, normal, "robotomedium");
-
-////////////////
-// Montserrat //
-////////////////
-
-@include font("Montserrat", "montserrat/montserrat-light", 300, normal, "montserratlight");
-@include font("Montserrat", "montserrat/montserrat-regular", normal, normal, "montserratregular");
+@include font("Source Sans Pro", "source_sans_pro/sourcesanspro-regular", normal, normal, "source_sans_proregular");
+@include font("Source Sans Pro", "source_sans_pro/sourcesanspro-semibold", 500, normal, "source_sans_prosemibold");
